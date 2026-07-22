@@ -1,15 +1,15 @@
 import "../App.css";
 import { Link } from "react-router-dom";
-import closed from "/Users/floralindberg/Desktop/Privat/Portfolio/portfolio/src/assets/closed.png";
+import closed from "/Users/floralindberg/Desktop/Privat/Portfolio/portfolio/src/assets/letter/closed.png";
 import { useState } from "react";
-import first from "/Users/floralindberg/Desktop/Privat/Portfolio/portfolio/src/assets/first.png";
-import second from "/Users/floralindberg/Desktop/Privat/Portfolio/portfolio/src/assets/second.png";
-import third from "/Users/floralindberg/Desktop/Privat/Portfolio/portfolio/src/assets/third.png";
-import fourth from "/Users/floralindberg/Desktop/Privat/Portfolio/portfolio/src/assets/fourth.png";
-import fifth from "/Users/floralindberg/Desktop/Privat/Portfolio/portfolio/src/assets/fifth.png";
-import sixt from "/Users/floralindberg/Desktop/Privat/Portfolio/portfolio/src/assets/sixt.png";
-import seventh from "/Users/floralindberg/Desktop/Privat/Portfolio/portfolio/src/assets/seventh.png";
-import eigtht from "/Users/floralindberg/Desktop/Privat/Portfolio/portfolio/src/assets/eigtht.png";
+import first from "/Users/floralindberg/Desktop/Privat/Portfolio/portfolio/src/assets/letter/first.png";
+import second from "/Users/floralindberg/Desktop/Privat/Portfolio/portfolio/src/assets/letter/second.png";
+import third from "/Users/floralindberg/Desktop/Privat/Portfolio/portfolio/src/assets/letter/third.png";
+import fourth from "/Users/floralindberg/Desktop/Privat/Portfolio/portfolio/src/assets/letter/fourth.png";
+import fifth from "/Users/floralindberg/Desktop/Privat/Portfolio/portfolio/src/assets/letter/fifth.png";
+import sixt from "/Users/floralindberg/Desktop/Privat/Portfolio/portfolio/src/assets/letter/sixt.png";
+import seventh from "/Users/floralindberg/Desktop/Privat/Portfolio/portfolio/src/assets/letter/seventh.png";
+import eigtht from "/Users/floralindberg/Desktop/Privat/Portfolio/portfolio/src/assets/letter/eigtht.png";
 
 
 
@@ -36,7 +36,7 @@ function Contact() {
   };
 
   return (
-    <div className="h-screen px-15 ">
+    <div className="h-screen px-15 bg-[#faf7f1]">
       <nav className="navBar">
         <span className="text-2xl font-semibold ">FLORA LINDBERG</span>
         <div className="navLinks text-2xl font-semibold h-24">

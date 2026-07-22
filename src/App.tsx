@@ -1,13 +1,10 @@
-import { useState } from "react";
 import headshot from "./assets/headshot.png";
 import { Link } from "react-router-dom";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="flex-1 flex flex-col grow ">
+    <div className="flex-1 flex flex-col grow  bg-[#faf7f1]">
       <section id="home">
         {" "}
         <div className="h-screen px-15">
