@@ -16,8 +16,13 @@
 
 }
 
+.div {
+  border: #557255;
+  border-radius: 25px;
+  border-color: #557255;
+}
+
 .navLinks {
-  display: inline-flex;
   align-items: center;
   gap: 3.0rem;
   transition: color 0.2s ease, 
@@ -32,12 +37,28 @@
 .navLinks a {
   color: #557255;
   text-decoration: none;
-  display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
   transform-origin: center;
 }
 
 .navLinks a:hover {
+  transform: scale(1.38);
+}
+
+.svg {
+    color : "red";
+}
+
+.div {
+  border: #557255;
+  border-radius: 25px;
+  border-color: #557255;
+  display: inline-block; /* needed so transform/scale works as expected */
+  transition: transform 0.3s ease, color 0.3s ease;
+  transform-origin: center;
+}
+
+.div:hover {
   transform: scale(1.38);
 }
 
@@ -111,6 +132,7 @@
     gap: 18px;
   }
 }
+
 
 #next-steps {
   display: flex;

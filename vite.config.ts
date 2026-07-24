@@ -4,8 +4,12 @@ import babel from '@rolldown/plugin-babel'
 import tailwindcss from '@tailwindcss/vite'
 import path from "path"
 
-// https://vite.dev/config/
+
 export default defineConfig({
+  server: {
+    host: '0.0.0.0', 
+    port: 5173
+  },
   plugins: [
     react(),
     babel({ presets: [reactCompilerPreset()] }),
