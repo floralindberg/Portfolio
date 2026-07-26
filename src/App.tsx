@@ -43,34 +43,35 @@ function App() {
                     </Button>
                   }
                 />
-                <DropdownMenuContent className=" hover:bg-accent hover:text-accent-foreground text-[#587258] font-bold bg-[#faf7f1]">
-                  <DropdownMenuItem className="">
-                    <a href="/">Home</a>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <a href="/projects">Projects</a>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <a href="/src/assets/resume.pdf">Resume</a>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <a href="/contact">Contact</a>
+                <DropdownMenuContent className=" hover:bg-accent hover:text-accent-foreground text-[#587258] font-bold bg-[#faf7f1] text-xl">
+                  <DropdownMenuItem className="text-xl">
+                   <a href="/" className="text-xl">Home</a>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <a href="/projects" className="text-xl">Projects</a>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <a href="/src/assets/resume.pdf" className="text-xl">Resume</a>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <a href="/contact" className="text-xl">Contact</a>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
             </nav>
 
-            <main className="flex-1 flex flex-col items-center justify-center">
-              <section id="center ">
+            <main className="flex flex-col items-center justify-center">
+              <section id="center" >
                 <div className="flex flex-col items-center pt-15 ">
                   <img className="block" src={headshot} alt="Flora Lindberg" />
-                  <h1 className="text-7xl font-light">FLORA LINDBERG</h1>
+                  <h1 className=" text-6xl lg:text-7xl font-light">FLORA LINDBERG</h1>
                   <h1 className="text-4xl py-5 ">Computer Engineer</h1>
                 </div>
+                {" "}
                 <a href="#about">
                   {" "}
                   <i
-                    className="lg:fi flg:i-rs-angle-down lg:text-4xl lg:text-[#557255] lg:absolute lg:bottom-4"
+                    className="fi fi-rs-angle-down hidden lg:absolute lg:bottom-4 lg:block lg:text-4xl lg:text-[#557255]" 
                     aria-hidden="true"></i>{" "}
                 </a>
               </section>
@@ -78,7 +79,7 @@ function App() {
           </div>
         </section>
 
-        <section className="">
+        <section>
           <section
             id="about"
             className="pt-10 px-10 lg:p-0 justify-center lg:relative lg:min-h-screen">
@@ -86,15 +87,15 @@ function App() {
               <h1 className="text-center text-5xl lg:text-left pb-5">
                 About Me
               </h1>
-              <h1 className="text-justify text-2xl">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-                penatibus et magnis dis parturient montes, nascetur ridiculus
-                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-                quis, sem. Nulla consequat massa quis enim. Donec pede justo,
-                fringilla vel, aliquet nec, vulputate eget, arcu. In enim
-                justo,{" "}
-              </h1>
+              <h2 className="text-justify text-xl lg:text-2xl ">
+                I am a recent computer engineering graduate from KTH with a
+                background in sales and service. I have experience in full-stack
+                development, from system architecture and databases to the code
+                that ties everything together to solve real-life problems.
+                Combining my interest in cybersecurity with software
+                engineering, I aim to build solutions that are reliable, secure,
+                and useful.
+              </h2>
             </div>
             <div className=" lg:px-50 py-10 text-[#557255]">
               <h1 className="text-5xl text-left">Education and Experience</h1>
@@ -105,30 +106,34 @@ function App() {
                     Education
                   </h1>
                   <h2 className="text-xl">
-                    BSc graduate in computer engineering at Kungliga Tekniska
+                    BSc graduate in Computer Engineering at Kungliga Tekniska
                     högskolan
                   </h2>
                 </div>
-                <div className="min-w-0 flex-1 rounded-xl border-3 border-[#557255]  p-8 pt-5 text-center">
+                <div className="min-w-0 flex-1 rounded-xl border-3 border-[#557255]  p-8 py-5 text-center">
                   <i className="fi fi-rs-badget-check-alt text-3xl"></i>
                   <h1 className="text-3xl pb-3">Experience</h1>
                   <h2 className="text-xl">Frontend and backend projects</h2>
-                  <h2 className="text-xl">
-                    Project with John Deere in embedded systems
-                  </h2>
+                  <h2 className="text-xl">Test-driven development</h2>
+                  <h2 className="text-xl">Spec-driven development</h2>
                 </div>
-                <div className="min-w-0 flex-1 rounded-xl border-3 border-[#557255] px-8 pt-5 text-center">
+                <div className="min-w-0 flex-1 rounded-xl border-3 border-[#557255] px-8 py-5 text-center">
                   <i className="fi fi-rs-following text-3xl"></i>
-                  <h1 className="text-3xl pb-3">Interests</h1>
+                  <h1 className="text-3xl pb-3">Main Interests</h1>
+                  <h2 className="text-xl">
+                    Cybersecurity – penetration testing and network
+                    security{" "}
+                  </h2>
+                  <h2 className="text-xl">Backend development</h2>
                 </div>
                 <div className="absolute bottom-5"></div>
               </div>
             </div>
-            <div className="justify justify-center ">
+            <div className="justify justify-center flex">
               <a href="#skills">
                 {" "}
                 <i
-                  className="lg:fi lg:fi-rs-angle-down lg:text-4xl lg:text-[#557255] lg:text-left lg:absolute lg:bottom-4"
+                  className="fi fi-rs-angle-down hidden lg:block lg:absolute lg:text-4xl lg:text-[#557255] lg:text-center lg:bottom-4"
                   aria-hidden="true"></i>{" "}
               </a>
             </div>
@@ -223,7 +228,7 @@ function App() {
                         role="img"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-10 h-10 md:w-11 md:h-11 text-[#557255] inline-block align-middle">
+                        className="w-10 h-10 md:w-9 md:h-9 text-[#557255] inline-block align-middle">
                         <title>Wolfram Mathematica</title>
                         <path
                           fill="currentColor"

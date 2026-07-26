@@ -73,10 +73,15 @@ body {
   margin: 0;
 }
 
-h1,
+h1{
+  font-family: var(--heading);
+  font-weight: 600;
+  color: var(--text-h);
+}
+
 h2 {
   font-family: var(--heading);
-  font-weight: 500;
+  font-weight: 600;
   color: var(--text-h);
 }
 

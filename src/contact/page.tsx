@@ -66,16 +66,16 @@ function Contact() {
           />
           <DropdownMenuContent className=" hover:bg-accent hover:text-accent-foreground text-[#587258] font-bold bg-[#faf7f1]">
             <DropdownMenuItem className="">
-              <a href="/">Home</a>
+              <a href="/" className="text-xl">Home</a>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <a href="/projects">Projects</a>
+              <a href="/projects" className="text-xl">Projects</a>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <a href="/src/assets/resume.pdf">Resume</a>
+              <a href="/src/assets/resume.pdf" className="text-xl">Resume</a>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <a href="/contact">Contact</a>
+              <a href="/contact" className="text-xl">Contact</a>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
@@ -94,14 +94,14 @@ function Contact() {
             </div>
             <div className=" justify-center place-content-center hidden md:flex md:flex-col">
               <img
-                className="pb-5 justify-center pl-5"
+                className="lg:pb-5 justify-center lg:pl-5 flex hidden lg:block"
                 width={200}
                 src={images[count]}
               />
               <button
                 type="button"
                 onClick={increase}
-                className="flex text-center text-xl border-3 border-[#557255] rounded-xl text-[#557255] p-3.5 py-2 px-7 ">
+                className="flex text-center hidden lg:block lg:text-xl lg:border-3 lg:border-[#557255] lg:rounded-xl lg:text-[#557255] lg:p-3.5 lg:py-2 lg:px-7 ">
                 Open the letter
               </button>
             </div>
@@ -111,7 +111,7 @@ function Contact() {
         <div className="flex lg:pt-0 pt-10">
           <div className="flex-col pr-30">
             <div className="flex ">
-              <i className="fi fi-rs-envelope text-5xl text-[#557255]  lg:pl-10 pr-5 "></i>
+              <i className="fi fi-rs-envelope text-5xl text-[#557255]  lg:px-10 pr-5 "></i>
               <a
                 href="mailto:floralindberg@hotmail.com"
                 className="text-xl pt-3 text-[#587258]">
@@ -119,7 +119,7 @@ function Contact() {
               </a>
             </div>
             <div className="flex align-bottom">
-              <i className="fi fi-brands-linkedin text-6xl text-[#557255] lg:px-10 pr-2"></i>
+              <i className="fi fi-brands-linkedin text-6xl text-[#557255] lg:pl-10 lg:pr-7 pr-2"></i>
               <h1 className="text-xl py-4">floralindberg@hotmail.com</h1>
             </div>
             <div className="flex align-content">
@@ -134,13 +134,13 @@ function Contact() {
         </div>
       </div>
 
-      <div className="font-mono text-sm absolute bottom-5 pb-5 lg:w-full pr-10">
-        <h1 className="!important! font-mono text-center">
-          Copyright
-          <i className="fi fi-rs-copyright px-2 text-xs"></i>
-          2026 Flora Lindberg. All rights reserved.
-        </h1>
-      </div>
+     <div className="pt-5 pr-10 font-mono text-sm absolute bottom-0 lg:w-full lg:pr-20 justify-center">
+                <h1 className="!important! font-mono text-center pl-0">
+                  Copyright
+                  <i className="fi fi-rs-copyright px-2 text-xs"></i>
+                  2026 Flora Lindberg. All rights reserved.
+                </h1>
+              </div>
     </div>
   );
 }
