@@ -9,7 +9,7 @@ import Contact from "./contact/page.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/">
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/projects" element={<Projects />} />

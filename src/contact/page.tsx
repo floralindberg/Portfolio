@@ -15,10 +15,7 @@ import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
@@ -39,7 +36,7 @@ function Contact() {
 
   const increase = () => {
     if (count == images.length - 1) {
-      setCount((c) => (c = -1));
+      setCount(() => -1);
     }
     setCount((c) => Math.min(c + 1, images.length - 1));
   };

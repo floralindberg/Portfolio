@@ -3,13 +3,11 @@ import { Link } from "react-router-dom";
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
 import melodymapper from "/src/assets/MelodyMapper.png";
-import report from "/src/assets/JohnDeereChallenge.pdf";
 import johndeere from "/src/assets/johndeere.png";
 import construction from "/src/assets/construction.png";
 
@@ -17,10 +15,7 @@ import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
