@@ -117,7 +117,12 @@ function Contact() {
             </div>
             <div className="flex align-bottom">
               <i className="fi fi-brands-linkedin text-6xl text-[#557255] lg:pl-10 lg:pr-7 pr-2"></i>
-              <h1 className="text-xl py-4">floralindberg@hotmail.com</h1>
+               <a
+                href="https://linkedin.com/in/flora-lindberg/"
+                className="text-xl py-2 text-[#587258] pt-4">
+                linkedin.com/in/flora-lindberg
+              </a>
+             
             </div>
             <div className="flex align-content">
               <i className="fi fi-brands-github text-5xl text-[#557255] lg:px-10 pr-5"></i>

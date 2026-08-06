@@ -499,8 +499,8 @@ function Projects() {
             </Dialog>
           </div>
         </div>
-        <div className="font-mono text-sm 2xl:absolute 2xl:bottom-5 pb-5 w-full ">
-          <h1 className="!important! font-mono text-center pt-10">
+        <div className="font-mono text-sm 2xl:absolute 2xl:bottom-5  pb-5 w-full ">
+          <h1 className="!important! font-mono text-center pt-10 ">
             Copyright
             <i className="fi fi-rs-copyright px-2 text-xs"></i>
             2026 Flora Lindberg. All rights reserved.

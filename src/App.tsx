@@ -12,7 +12,7 @@ import {
 function App() {
   return (
     <div>
-      <div className="flex-1 flex flex-col grow bg-[#faf7f1]">
+      <div className="flex-1 flex flex-col grow bg-[#faf7f1] ">
         <section id="home">
           {" "}
           <div className="h-screen px-15">
@@ -142,7 +142,7 @@ function App() {
             </div>
           </section>
 
-          <div className="relative h-screen w-full grow flex-wrap px-10">
+          <div className="relative h-screen w-full grow flex-wrap px-10 pb-0">
             <section id="skills">
               <div className="">
                 <h1 className="text-5xl py-10">Technical Skills</h1>
@@ -258,8 +258,8 @@ function App() {
                 </div>
               </div>
 
-              <div className="pt-5 pr-10 font-mono text-sm absolute bottom-0 lg:w-full lg:pr-20 justify-center">
-                <h1 className="!important! font-mono text-center pl-0">
+              <div className="pt-5 sm:pr-10 font-mono text-sm md:absolute md:bottom-0 md:w-full md:pr-20 justify-center pb-0">
+                <h1 className="!important! font-mono text-center pl-0 ">
                   Copyright
                   <i className="fi fi-rs-copyright px-2 text-xs"></i>
                   2026 Flora Lindberg. All rights reserved.
