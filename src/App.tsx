@@ -39,24 +39,24 @@ function App() {
                 />
                 <DropdownMenuContent className=" hover:bg-accent hover:text-accent-foreground text-[#587258] font-bold bg-[#faf7f1] text-xl">
                   <DropdownMenuItem className="text-xl">
-                    <a href="/" className="text-xl">
+                    <Link to="/" className="text-xl">
                       Home
-                    </a>
+                    </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem>
-                    <a href="/projects" className="text-xl">
+                    <Link to="/projects" className="text-xl">
                       Projects
-                    </a>
+                    </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem>
-                    <a href="/src/assets/resume.pdf" className="text-xl">
+                    <Link to="/src/assets/resume.pdf" className="text-xl">
                       Resume
-                    </a>
+                    </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem>
-                    <a href="/contact" className="text-xl">
+                    <Link to="/contact" className="text-xl">
                       Contact
-                    </a>
+                    </Link>
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
