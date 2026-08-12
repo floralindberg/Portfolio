@@ -73,9 +73,9 @@ function Contact() {
                     </Link>
                   </DropdownMenuItem>
                   <DropdownMenuItem>
-                    <Link to="/src/assets/resume.pdf" className="text-xl">
+                    <a href="/resume.pdf" className="text-xl">
                       Resume
-                    </Link>
+                    </a>
                   </DropdownMenuItem>
                   <DropdownMenuItem>
                     <Link to="/contact" className="text-xl">
