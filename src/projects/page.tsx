@@ -491,7 +491,7 @@ function Projects() {
                         </div>
                       </div>
                       <a
-                        href="/public/JohnDeereChallenge.pdf"
+                        href="/JohnDeereChallenge.pdf"
                         tabIndex={-1}
                         className="border rounded-xl bg-[#a5ada5] py-3  hover:bg-[#587258] text-xl font-bold text-[#faf7f1] flex justify-center gap-2">
                         <i className="fi fi-rs-file-pdf  text-3xl text-[#faf7f1] align-center pr-3 "></i>
