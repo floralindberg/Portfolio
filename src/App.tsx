@@ -24,7 +24,7 @@ function App() {
               <div className="navLinks display-inline text-2xl font-semibold h-24 hidden md:flex">
                 <a href="/">Home</a>
                 <Link to="/projects">Projects</Link>
-                <a href="/src/assets/resume.pdf">Resume</a>
+                <a href="/resume.pdf">Resume</a>
                 <Link to="/contact">Contact</Link>
               </div>
 

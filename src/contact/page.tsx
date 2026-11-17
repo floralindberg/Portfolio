@@ -19,6 +19,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
+
 function Contact() {
   const [count, setCount] = useState(0);
 
@@ -52,38 +53,30 @@ function Contact() {
           <a href="/src/assets/resume.pdf">Resume</a>
           <Link to="/contact">Contact</Link>
         </div>
- <DropdownMenu>
-                <DropdownMenuTrigger
-                  className="md:hidden absolute right-3 pt-2 text-[#587258]"
-                  render={
-                    <Button variant={"secondary"}>
-                      <i className="fi fi-rs-burger-menu text-[#587258] text-xl "></i>
-                    </Button>
-                  }
-                />
-                <DropdownMenuContent className=" hover:bg-accent hover:text-accent-foreground text-[#587258] font-bold bg-[#faf7f1] text-xl">
-                  <DropdownMenuItem className="text-xl">
-                    <Link to="/" className="text-xl">
-                      Home
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <Link to="/projects" className="text-xl">
-                      Projects
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <a href="/resume.pdf" className="text-xl">
-                      Resume
-                    </a>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <Link to="/contact" className="text-xl">
-                      Contact
-                    </Link>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
+        <DropdownMenu>
+          <DropdownMenuTrigger
+            className="md:hidden absolute right-3 pt-2 text-[#587258]"
+            render={
+              <Button variant={"secondary"}>
+                <i className="fi fi-rs-burger-menu text-[#587258] text-xl "></i>
+              </Button>
+            }
+          />
+          <DropdownMenuContent className=" hover:bg-accent hover:text-accent-foreground text-[#587258] font-bold bg-[#faf7f1]">
+            <DropdownMenuItem className="">
+              <a href="/" className="text-xl">Home</a>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <a href="/projects" className="text-xl">Projects</a>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <a href="/resume.pdf" className="text-xl">Resume</a>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <a href="/contact" className="text-xl">Contact</a>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </nav>
 
       <div>
@@ -144,7 +137,7 @@ function Contact() {
         </div>
       </div>
 
-     <div className="pt-5 pr-10 font-mono text-sm absolute bottom-0 lg:w-full lg:pr-20 justify-center">
+     <div className="pt-5 pr-10 font-mono text-sm absolute bottom-5 lg:w-full lg:pr-20 justify-center">
                 <h1 className="!important! font-mono text-center pl-0">
                   Copyright
                   <i className="fi fi-rs-copyright px-2 text-xs"></i>
